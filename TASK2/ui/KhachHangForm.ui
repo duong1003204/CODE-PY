@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quản Lý Khách Hàng</string>
+  </property>
+  <property name="styleSheet">
+   <string>background-color: #f0f0f0;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <!-- Nhãn tiêu đề -->
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Thông Tin Khách Hàng</string>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 16px; font-weight: bold;</string>
+    </property>
+   </widget>
+   <!-- Nhãn và trường nhập liệu -->
+   <widget class="QLabel" name="lblTenKH">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tên:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtTenKH">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>50</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Nhập tên khách hàng</string>
+    </property>
+    <property name="styleSheet">
+     <string>border: 1px solid #ccc; border-radius: 3px; padding: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblSDT">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Số điện thoại:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtSDT">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>90</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Nhập số điện thoại</string>
+    </property>
+    <property name="styleSheet">
+     <string>border: 1px solid #ccc; border-radius: 3px; padding: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblEmail">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Email:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtEmail">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>130</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Nhập email</string>
+    </property>
+    <property name="styleSheet">
+     <string>border: 1px solid #ccc; border-radius: 3px; padding: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblDiaChi">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Địa chỉ:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtDiaChi">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>170</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Nhập địa chỉ</string>
+    </property>
+    <property name="styleSheet">
+     <string>border: 1px solid #ccc; border-radius: 3px; padding: 5px;</string>
+    </property>
+   </widget>
+   <!-- Các nút chức năng -->
+   <widget class="QPushButton" name="btnThemKH">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>80</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Thêm</string>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #4CAF50; color: white; border-radius: 5px; padding: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSuaKH">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>220</y>
+      <width>80</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sửa</string>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #2196F3; color: white; border-radius: 5px; padding: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnXoaKH">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>220</y>
+      <width>80</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Xóa</string>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #f44336; color: white; border-radius: 5px; padding: 5px;</string>
+    </property>
+   </widget>
+   <!-- Tìm kiếm -->
+   <widget class="QLabel" name="lblTimKH">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>270</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tìm kiếm:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtTimKH">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>270</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Tìm kiếm theo tên</string>
+    </property>
+    <property name="styleSheet">
+     <string>border: 1px solid #ccc; border-radius: 3px; padding: 5px;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnTimKH">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>270</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tìm</string>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #FF9800; color: white; border-radius: 5px; padding: 5px;</string>
+    </property>
+   </widget>
+   <!-- Bảng khách hàng -->
+   <widget class="QTableWidget" name="tableKhachHang">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>860</width>
+      <height>300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>border: 1px solid #ccc; background-color: white;</string>
+    </property>
+   </widget>
+   <!-- Nút thoát -->
+   <widget class="QPushButton" name="btnThoat">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>20</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Thoát</string>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #607D8B; color: white; border-radius: 5px; padding: 5px;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Thống Kê</string>
+  </property>
+  <property name="styleSheet">
+   <string>background-color: #f0f0f0;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <!-- Nhãn tiêu đề -->
+   <widget class="QLabel" name="lblTitle">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>200</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Thống Kê Hóa Đơn</string>
+    </property>
+    <property name="styleSheet">
+     <string>font-size: 16px; font-weight: bold;</string>
+    </property>
+   </widget>
+   <!-- Bộ lọc ngày -->
+   <widget class="QLabel" name="lblTuNgay">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Từ ngày:</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateTuNgay">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>50</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>border: 1px solid #ccc; border-radius: 3px; padding: 5px;</string>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblDenNgay">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>50</y>
+      <width>80</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Đến ngày:</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateDenNgay">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>50</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>border: 1px solid #ccc; border-radius: 3px; padding: 5px;</string>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <!-- Nút thống kê -->
+   <widget class="QPushButton" name="btnThongKe">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>100</y>
+      <width>100</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Thống kê</string>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #2196F3; color: white; border-radius: 5px; padding: 5px;</string>
+    </property>
+   </widget>
+   <!-- Bảng thống kê -->
+   <widget class="QTableView" name="tableThongKe">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>860</width>
+      <height>450</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string>border: 1px solid #ccc; background-color: white;</string>
+    </property>
+   </widget>
+   <!-- Nút thoát -->
+   <widget class="QPushButton" name="btnThoat">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>20</y>
+      <width>80</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Thoát</string>
+    </property>
+    <property name="styleSheet">
+     <string>background-color: #607D8B; color: white; border-radius: 5px; padding: 5px;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
